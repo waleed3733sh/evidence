@@ -1,15 +1,13 @@
 {
-  "version": 2,
-  "cleanUrls": false,
-  "headers": [
+  "functions": {
+    "server.js": {
+      "includeFiles": "**/*"
+    }
+  },
+  "rewrites": [
     {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store"
-        }
-      ]
+      "source": "/(.*)",
+      "destination": "/server.js"
     }
   ]
 }
