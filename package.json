@@ -1,0 +1,16 @@
+{
+  "name": "teacher-evidence-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teacher evidence portfolio app for Saudi teachers.",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.75.0"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دخول ملف شواهد الأداء الوظيفي</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="login-page" data-page="login">
+  <main class="login-panel">
+    <section class="login-card">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <strong>ملف شواهد الأداء الوظيفي</strong>
+        <span>للمعلمين والمعلمات في السعودية</span>
+      </div>
+
+      <form id="loginForm">
+        <p class="eyebrow mt">دخول المستخدم</p>
+        <h1>اكتب كودك لعرض بياناتك</h1>
+        <label class="field">
+          <span>كود الدخول</span>
+          <input id="teacherCode" type="text" placeholder="T-1001" autocomplete="one-time-code">
+        </label>
+        <button class="primary full mt" type="submit">عرض البيانات</button>
+      </form>
+
+      <div id="loginPreview" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <aside class="login-visual" aria-hidden="true">
+    <img src="assets/app-visual.png" alt="">
+  </aside>
+
+  <div id="toast" class="toast"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
